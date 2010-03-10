@@ -10,7 +10,6 @@ if ($_GET['f'] == "") {
 
 $filename = $_GET['f'];
 $filepath = "files/$filename";
-$previewpath = "{$filepath}-preview.jpg";
 
 if (!file_exists($filepath)) {
 	header("HTTP/1.0 404 Not Found");
@@ -18,7 +17,13 @@ if (!file_exists($filepath)) {
 	exit;
 }
 
+$previewname = "{$filename}-preview.jpg";
+$previewpath = "{$filepath}-preview.jpg";
+
 $filedate = filemtime($filepath);
+
+$fileurl = 'http://'.$_SERVER['SERVER_NAME']."/files/".rawurlencode($filename);
+$previewurl = 'http://'.$_SERVER['SERVER_NAME']."/files/".rawurlencode($previewname);
 
 include 'template/image.php';
 
@@ -28,11 +33,11 @@ include 'template/image.php';
 
 require_once 'template/thumbs/ThumbLib.inc.php';
 
-//try {
+try {
      $thumb = PhpThumbFactory::create($filepath);
      $thumb->adaptiveResize(75, 75)->save($previewpath, "jpg");
-//} catch (Exception $e) {
-//     exit;
-//}
+} catch (Exception $e) {
+     exit;
+}
 
 ?>

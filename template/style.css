@@ -1,7 +1,10 @@
+/* @override 
+	http://p.flabs.org/template/style.css */
+
 body {
 	background: #444;
 	color: #ccc;
-	font-family: "Lucida Grande", "Lucida Sans", Lucida, Verdana, sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	padding-top: 60px;
 }
@@ -11,8 +14,9 @@ body {
 		padding: 0;
 	}
 
-img {
+body > img {
 	max-width: 90%;
+	max-height: 110%;
 	padding: 10px;
 	border: 1px solid #666;
 	display: block;
@@ -25,15 +29,17 @@ h1 {
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: lowercase;
+	margin-bottom: 60px;
 	/*position: relative;
 	bottom: 15px;*/
 }
 
 	h1 span {
-		background: #000;
+		background: #111;
 		color: #fff;
+		text-shadow: 0 0 2px #000;
 		padding: 2px 15px;
-		border: 2px solid #fff;
+		border: 2px solid #ddd;
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
 		border-radius: 20px;
@@ -42,22 +48,72 @@ h1 {
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	}
 
+ul#archive, #archive ul {
+	list-style: none;
+}
+
+	#archive h2 {
+		width: 50%;
+		min-width: 200px;
+		text-align: right;
+		background: #333;
+		color: #fff;
+		text-shadow: 0 0 2px #222;
+		text-transform: uppercase;
+		font-size: 15px;
+		padding: 5px 15px;
+		-webkit-transition: background 1s ease-in;
+	}
+	
+		#archive:hover h2 {
+			background: #222;
+		}
+	
+	#archive ul {
+		margin: 10px 20px;
+	}
+	
+	#archive li.file {
+		padding: 5px;
+	}
+	
+		#archive li.file a {
+			color: #777;
+			text-decoration: none;
+		}
+	
+	#archive li.image {
+		float: left;
+		padding: 5px 5px 3px 5px;
+		border: 1px solid #555;
+		margin: 5px;
+		display: block;
+	}
+	
+		#archive li.image a {
+			text-decoration: none;
+		}
+
 #footer {
 	width: 100%;
 	list-style: none;
-	margin-bottom: 20px;
 	position: absolute;
-	bottom: 10px;
+	position: fixed;
+	bottom: 0px;
 	text-transform: uppercase;
+	background: #444;
+	-webkit-box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
 }
 
 	#footer li {
 		float: left;
 		display: block;
 		margin: 0 10px;
+		padding: 5px;
 	}
 	
 	#footer #share input {
+		width: 300px;
 		opacity: 0;
 		-webkit-transition: opacity 0.5s linear;
 	}

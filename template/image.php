@@ -15,9 +15,9 @@
 		<li><time datetime="<? echo date("d. M y", $filedate) ?>" pubdate="pubdate"><? echo date("d. M y", $filedate) ?></time>
 		<li id="share">
 			Share
-			<input type="text" name="share" value="&lt;a href=&quot;<? echo $filepath ?>&quot;&gt;&lt;img src=&quot;<? echo $previewpath ?>&quot; alt=&quot;<? echo $filename ?>&quot; /&gt;&lt;/a&gt;" />
+			<input type="text" name="share" value="&lt;a href=&quot;<? echo $fileurl; ?>&quot;&gt;&lt;img src=&quot;<? echo $previewurl ?>&quot; alt=&quot;<? echo $filename ?>&quot; /&gt;&lt;/a&gt;" />
 		</li>
-		<li id="flabs"><a href="http://flabs.org/">FLabs</a></li>
+		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
 	</ul>
 	
 </body>

@@ -10,7 +10,7 @@
 	<h1><span>Hello.</span></h1>
 	
 	<ul id="footer">
-		<li id="flabs"><a href="http://flabs.org/">FLabs</a></li>
+		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
 	</ul>
 	
 </body>

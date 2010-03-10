@@ -15,7 +15,7 @@
 	<h1><span>Go ahead, throw your crappy images onto me</span></h1>
 	
 	<ul id="footer">
-		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
+		<?php include '_footer.php'; ?>
 	</ul>
 	
 </body>

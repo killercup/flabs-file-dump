@@ -17,11 +17,13 @@ body {
 body > img {
 	max-width: 90%;
 	max-height: 110%;
+	width: auto;
 	padding: 10px;
 	border: 1px solid #666;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	-ms-interpolation-mode: bicubic;
 }
 
 h1 {
@@ -34,10 +36,11 @@ h1 {
 	bottom: 15px;*/
 }
 
-	h1 span {
+	h1 span, h1 a {
 		background: #111;
 		color: #fff;
 		text-shadow: 0 0 2px #000;
+		text-decoration: none;
 		padding: 2px 15px;
 		border: 2px solid #ddd;
 		-webkit-border-radius: 20px;
@@ -103,7 +106,19 @@ ul#archive, #archive ul {
 	text-transform: uppercase;
 	background: #444;
 	-webkit-box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px -5px 10px #333;
+	box-shadow: 0px -5px 10px #333;
 }
+	
+	#footer a {
+		color: #ccc;
+		text-decoration: none;
+		-webkit-transition: color 1s ease-in;
+	}
+	
+	#footer a:hover {
+		color: #fff;
+	}
 
 	#footer li {
 		float: left;
@@ -115,7 +130,7 @@ ul#archive, #archive ul {
 	#footer #share input {
 		width: 300px;
 		opacity: 0;
-		-webkit-transition: opacity 0.5s linear;
+		-webkit-transition: opacity 0.5s ease-in;
 	}
 	
 		#footer #share:hover {
@@ -128,16 +143,6 @@ ul#archive, #archive ul {
 		}
 	
 	#footer li#flabs {
-		position: absolute;
-		right: 0;
+		float: right;
+		text-transform: none;
 	}
-	
-		#flabs a {
-			color: #ccc;
-			text-decoration: none;
-		}
-		
-		#flabs a:hover {
-			color: #fff;
-			text-decoration: underline;
-		}

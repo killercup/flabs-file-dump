@@ -7,7 +7,7 @@
 </head>
 <body>
 	
-	<h1><span>Hello. I'm your archive.</span></h1>
+	<h1><a href="<?php echo $_SERVER["REQUEST_URI"] ?>">Hello. I'm your archive.</a></h1>
 	
 	<ul id="archive">
 	<?php $fdate0 = "";
@@ -48,10 +48,12 @@
 		<?php $fdate0 = $fdate;
 		endif;
 	} /* foreach */ ?>
+			</ul>
+		</li>
 	</ul>
 	
 	<ul id="footer">
-		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
+		<?php include '_footer.php'; ?>
 	</ul>
 	
 </body>

@@ -10,7 +10,7 @@
 	<h1><span>Sorry, I don't have what you are looking for.</span></h1>
 	
 	<ul id="footer">
-		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
+		<?php include '_footer.php'; ?>
 	</ul>
 	
 </body>

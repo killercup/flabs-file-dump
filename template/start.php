@@ -10,7 +10,8 @@
 	<h1><span>Hello.</span></h1>
 	
 	<ul id="footer">
-		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
+		<li><a href="http://pascalhertleif.de/">Pascal Hertleif.</a>
+		<?php include '_footer.php'; ?>
 	</ul>
 	
 </body>

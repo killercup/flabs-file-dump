@@ -9,7 +9,7 @@
 	
 	<img src="<? echo $filepath ?>" alt="<? echo $filename ?>" />
 	
-	<h1><span><? echo $filename ?></span></h1>
+	<h1><a href="<?php echo $_SERVER["REQUEST_URI"] ?>"><? echo $filename ?></a></h1>
 	
 	<ul id="footer">
 		<li><time datetime="<? echo date("d. M y", $filedate) ?>" pubdate="pubdate"><? echo date("d. M y", $filedate) ?></time>
@@ -17,7 +17,7 @@
 			Share
 			<input type="text" name="share" value="&lt;a href=&quot;<? echo $fileurl; ?>&quot;&gt;&lt;img src=&quot;<? echo $previewurl ?>&quot; alt=&quot;<? echo $filename ?>&quot; /&gt;&lt;/a&gt;" />
 		</li>
-		<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">FLabs</a></li>
+		<?php include '_footer.php'; ?>
 	</ul>
 	
 </body>

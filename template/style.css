@@ -16,7 +16,7 @@ body {
 
 body > img {
 	max-width: 90%;
-	max-height: 110%;
+	max-height: 200%;
 	width: auto;
 	padding: 10px;
 	border: 1px solid #666;
@@ -133,6 +133,11 @@ ul#archive, #archive ul {
 		-webkit-transition: opacity 0.5s ease-in;
 	}
 	
+		#footer #share {
+			color: #ccc;
+			-webkit-transition: color 0.5s ease-in;
+		}
+		
 		#footer #share:hover {
 			cursor: pointer;
 			color: #fff;

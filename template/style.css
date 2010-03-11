@@ -91,7 +91,12 @@ ul#archive, #archive ul {
 		border: 1px solid #555;
 		margin: 5px;
 		display: block;
+		-webkit-transition: border-color 0.5s ease-in;
 	}
+		
+		#archive li.image:hover {
+			border: 1px solid #999;
+		}
 	
 		#archive li.image a {
 			text-decoration: none;

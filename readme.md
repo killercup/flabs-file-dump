@@ -16,3 +16,11 @@ This thing is as <del>dump</del> dumb as it can be. Use the power of your web se
 	)
 	
 	server.error-handler-404 = "/template/404.php"
+
+# ideas
+
+- archive: show a nice info-bubble when hovering an image
+- archive: filter content with a small search bar and the power of <a href="http://razorjack.net/quicksand/">Quicksand</a>
+- add more clever thumbnail generator (create thumbnail when viewing the archvie page, threaded/background process)
+- image page: click on 'share' highlights the textfield's content
+- image page: click on image zooms to 100%

@@ -33,11 +33,14 @@ include 'template/image.php';
 
 require_once 'template/thumbs/ThumbLib.inc.php';
 
-try {
-     $thumb = PhpThumbFactory::create($filepath);
-     $thumb->adaptiveResize(75, 75)->save($previewpath, "jpg");
-} catch (Exception $e) {
-     exit;
+
+if (!file_exists($previewpath)) {
+	try {
+	     $thumb = PhpThumbFactory::create($filepath);
+	     $thumb->adaptiveResize(75, 75)->save($previewpath, "jpg");
+	} catch (Exception $e) {
+	     exit;
+	}
 }
 
 ?>

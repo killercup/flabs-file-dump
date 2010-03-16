@@ -3,7 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Archive.</title>
+	
 	<link rel="stylesheet" type="text/css" href="/template/style.css" media="all" />
+	
+	<script type="text/javascript" src="template/js/jquery.js"></script>
+	<script type="text/javascript" src="template/js/jquery.quicksand.js"></script>
+	<script type="text/javascript" src="template/js/archive.js"></script>
+	
 </head>
 <body>
 	
@@ -37,11 +43,12 @@
 					<a href="/<?php echo rawurlencode($fname); ?>" title="<?php echo $fdate; ?> -- <?php echo $fname; ?>">
 						<img src="<?php echo $f; ?>-preview.jpg" alt="<?php echo $fname; ?>" />
 					</a>
+					<p class="filename"><a href="/<?php echo rawurlencode($fname); ?>"><?php echo $fname; ?></a></p>
 				</li>
 				
 				<?php } else { ?>
 				<li class="file">
-					<a href="/<?php echo rawurlencode($fname); ?>"><?php echo $fname; ?></a>
+					<p class="filename"><a href="/<?php echo rawurlencode($fname); ?>"><?php echo $fname; ?></a></p>
 				</li>
 				<?php } ?>
 		
@@ -50,9 +57,11 @@
 	} /* foreach */ ?>
 			</ul>
 		</li>
+		<br style="clear: both;" />
 	</ul>
 	
 	<ul id="footer">
+		<li><form action="/manage/"><input type="search" name="search" id="search" /></form></li>
 		<?php include '_footer.php'; ?>
 	</ul>
 	

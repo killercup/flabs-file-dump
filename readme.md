@@ -12,8 +12,16 @@ This thing is as <del>dump</del> dumb as it can be. Use the power of your web se
 
 	url.rewrite = (
 		"/(files|template)/(.*)" => "/$0/$1",
-		"/(.*)\.(png|jpg|jpeg|gif|tif|tiff)" => "/index.php?f=$1.$2",
+		"/(.*)\.(png|jpg|jpeg|gif|tif|tiff|PNG|JPG|JPEG|GIF|TIF|TIFF)" => "/index.php?f=$1.$2",
 	)
+	
+	auth.backend = "htpasswd"
+	auth.backend.htpasswd.userfile = "/etc/lighttpd/auth/authfile"
+	auth.require = ( "/manage/" => (
+		"method" => "basic",
+		"realm" => "flabs file dump",
+		"require" => "valid-user"
+	) )
 	
 	server.error-handler-404 = "/template/404.php"
 

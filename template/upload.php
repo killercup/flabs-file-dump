@@ -7,12 +7,13 @@
 </head>
 <body>
 	
-	<form action="." method="post" enctype="multipart/form-data">
+	<h1><span>Go ahead, throw your crappy images onto me</span></h1>
+	
+	<form id="upload" action="upload.php" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="max_file_size" value="20000000" />
 		<input type="file" name="file" />
 		<input type="submit" value="Upload" />
 	</form>
-	
-	<h1><span>Go ahead, throw your crappy images onto me</span></h1>
 	
 	<ul id="footer">
 		<?php include '_footer.php'; ?>

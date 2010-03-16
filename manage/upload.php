@@ -7,7 +7,7 @@ if ($_FILES['file']['tmp_name'] == ''):
 
 // if there is an upload, save it.
 else:
-	move_uploaded_file($_FILES['file']['tmp_name'], "../files/{$_FILES['file']['name']}");
+	move_uploaded_file($_FILES['file']['tmp_name'], "../files/".basename($_FILES['file']['name']));
 	Header("HTTP/1.1 301 Moved Permanently");
 	Header("Location: http://".$_SERVER['SERVER_NAME']."/".rawurlencode($_FILES['file']['name']));
 

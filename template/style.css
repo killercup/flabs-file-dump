@@ -102,6 +102,15 @@ ul#archive, #archive ul {
 			text-decoration: none;
 		}
 
+form#upload {
+	width: 400px;
+	margin: 0 auto;
+}
+
+	#upload input[type=file] {
+		color: #777;
+	}
+
 #footer {
 	width: 100%;
 	list-style: none;

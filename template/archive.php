@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="/template/style.css" media="all" />
 	
 	<script type="text/javascript" src="template/js/jquery.js"></script>
-	<script type="text/javascript" src="template/js/jquery.quicksand.js"></script>
 	<script type="text/javascript" src="template/js/archive.js"></script>
 	
 </head>
@@ -61,7 +60,8 @@
 	</ul>
 	
 	<ul id="footer">
-		<li><form action="/manage/"><input type="search" name="search" id="search" /></form></li>
+		<li><form action="/manage/"><input type="search" name="search" id="search" placeholder="Search" /></form></li>
+		<li><a href="/manage/upload.php">Upload</a></li>
 		<?php include '_footer.php'; ?>
 	</ul>
 	

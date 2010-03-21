@@ -1,14 +1,17 @@
 $(function() {
 
+// inspired by http://www.digitalinferno.net/blog/jquery-plugin-livefilter-1-0-1/
 jQuery.expr[':'].Contains = function(a,i,m){
     return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase())>=0;
 };
 
+/*
 $("#archive li").each(function(i) {
 	$(this).attr("data-id", "id-"+i)
 });
 	
 $original = $("#archive").clone();
+*/
 
 $("#footer form").keyup(function(pd) {
 	pd.preventDefault();

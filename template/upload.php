@@ -16,6 +16,7 @@
 	</form>
 	
 	<ul id="footer">
+		<li><a href="/manage/">Back</a></li>
 		<?php include '_footer.php'; ?>
 	</ul>
 	

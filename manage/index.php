@@ -10,7 +10,7 @@ $files = glob('../files/*');
 array_multisort(
 	array_map('filemtime', $files),
 	SORT_NUMERIC,
-	SORT_ASC,
+	SORT_DESC,
 	$files
 );
 

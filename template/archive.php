@@ -27,6 +27,7 @@
 		
 		<?php /* if new month but not first, close previous month */ 
 			if(($fdate != $fdate0) and ($fdate0 != "")) { ?>
+				<br style="clear: both;" /> 
 			</ul>
 		</li>
 		<?php }?>
@@ -54,6 +55,7 @@
 		<?php $fdate0 = $fdate;
 		endif;
 	} /* foreach */ ?>
+				<br style="clear: both;" /> 
 			</ul>
 		</li>
 		<br style="clear: both;" />

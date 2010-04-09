@@ -1,1 +1,1 @@
-<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://flabs.org/">fLabs</a></li>
+<li id="flabs"><a href="/">&#x238B;</a> &mdash; <a href="http://github.com/killercup/flabs-file-dump">Fork me</a> &mdash; <a href="http://flabs.org/">fLabs</a></li>

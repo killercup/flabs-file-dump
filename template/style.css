@@ -68,7 +68,7 @@ ul#archive, #archive ul {
 		-webkit-transition: background 1s ease-in;
 	}
 	
-		#archive:hover h2 {
+		#archive li.month:hover h2 {
 			background: #222;
 		}
 		

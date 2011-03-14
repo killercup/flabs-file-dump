@@ -14,7 +14,7 @@ body {
 		padding: 0;
 	}
 
-body > img {
+#image {
 	max-width: 90%;
 	max-height: 200%;
 	width: auto;
@@ -178,9 +178,22 @@ form#upload {
 			color: #fff;
 		}
 	
-		#footer #share:hover input {
-			opacity: 1;
+			#footer #share.vis input {
+				opacity: 1;
+			}
+		
+		#footer #share:after {
+			content: "[CMD]+[C]";
+			opacity: 0;
+			-webkit-transition: opacity 0.5s ease-in;
+			position: relative;
+			padding-left: 10px;
+			font-size: 10px;
 		}
+			
+			#footer #share.vis:after {
+				opacity: 1;
+			}
 	
 	#footer li#flabs {
 		float: right;
